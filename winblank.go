@@ -45,7 +45,7 @@ func wsConnect() {
 				log.Println("WS read error - ", err)
 				return
 			}
-			log.Printf("Received: %s", message)
+			log.Printf("Received msg - %s", message)
 			if string(message) == "alexaevent:computer:power:off" {
 				sleepWindows()
 			}
